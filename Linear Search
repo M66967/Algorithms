@@ -1,0 +1,17 @@
+items = ["Thorpe Park", "Alton Towers", "Chessington WOA", "Paultons Park", "Drayton Manor", "LEGOLAND Windsor", "Blackpool Pleasure Beach", "Oakwood", "Blackgang Chine", "Dreamland Margate"]
+item_to_find = input("Enter a UK Theme Park: ")
+
+index = 0
+found = False
+
+while found == False and index < len(items):
+    if items[index] == item_to_find:
+        found = True
+    else:
+        index = index + 1
+
+if found == True:
+    print(item_to_find, "is a UK Theme Park found at position", index)
+else:
+    print(item_to_find, "is not a UK Theme Park")
+        
