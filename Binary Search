@@ -1,0 +1,21 @@
+items = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
+item_to_find = int(input("Enter number to find (1-11): "))
+found = False
+
+first = 0
+last = len(items) - 1
+midpoint = (first + last) // 2
+while not found and first <= last:
+    if midpoint == item_to_find:
+        print("Found at", midpoint)
+        found = True
+    else:
+        if item_to_find < midpoint:
+            last = midpoint - 1
+        elif item_to_find > midpoint:
+            first = midpoint + 1
+        else:
+            print("Item not found")
+
+
+
