@@ -1,0 +1,14 @@
+def insertion_sort(items):
+    n = len(items)
+    for count in range(1, n):
+        current = items[count]
+        count2 = count
+        while count2 > 0 and items[count2 - 1] > current:
+            items[count2] = items[count2 - 1]
+            count2 = count2 - 1
+        items[count2] = current
+    return items
+
+
+items = ["B", "A", "G", "C", "F"]
+print(insertion_sort(items))
