@@ -11,4 +11,5 @@ def insertion_sort(items):
 
 
 items = ["B", "A", "G", "C", "F"]
-print(insertion_sort(items))
+print("Sorted list:", insertion_sort(items))
+
